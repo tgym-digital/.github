@@ -1,0 +1,37 @@
+name: Chore
+description: Track maintenance or non-feature work
+title: "[Chore] <short description>"
+labels: ["chore"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What needs to be done?
+      placeholder: Describe the task or maintenance activity.
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why is this chore necessary?
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps/Tasks
+      description: List the steps to accomplish this chore.
+      placeholder: Itemize the tasks if possible.
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      description: Current status of the chore.
+      options:
+        - Not started
+        - In progress
+        - Blocked
+        - Completed
+  - type: textarea
+    id: related-issues
+    attributes:
+      label: Related Issues/PRs
+      description: Link to related issues, discussions, or pull requests.
